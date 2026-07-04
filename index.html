@@ -11,48 +11,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
-<body>
+<body class="loading">
+    <!-- Préchargeur (Preloader) -->
+    <div id="preloader">
+        <div class="loader-logo">Brouhanoudine</div>
+        <div class="loader-spinner"></div>
+    </div>
+
     <section class="flex items-center justify-center flex-col" id="section1">
-        <div class="image flex items-center justify-center rounded-full">
+        <div class="image flex items-center justify-center rounded-full reveal reveal-scale delay-200">
             <img src="images/Brouhane.jpeg" alt="Brouhanoudine OMOROU" class="h-50 w-50 rounded-full">
         </div>
-        <p class="first-paragraphe font-semibold">---- Etudiant . Génie Logiciel . Lomé, Togo</p><br>
-        <p class="second-paragraphe ">BONJOUR, JE SUIS</p>
-        <h1 class="text-7xl font-bold" id="nom">Brouhanoudine OMOROU</h1>
-        <div class="m-5 w-100%" id="lien-info">
-            <ul class="flex justify-center gap-10 w-full">
-                <li class="flex gap-3 justify-center items-center opacity-70"><img src="/images/Position.png"
-                        alt="">Lomé - Togo</li>
-                <li class="flex  justify-center items-center opacity-70"><a href="tel:"
-                        class="flex gap-3 justify-center items-center"><img src="/images/telephone.png"
-                            alt="+228 90 42 00 14 ">+228 90 42 00 14</a></li>
-                <li class="flex justify-center items-center opacity-70"><a href="mailto:"
-                        class="flex gap-3 justify-center items-center"><img src="/images/email.png"
-                            alt="contact.brouhanoudine@gmail.com">contact.brouhanoudine@gmail.com</a></li>
-            </ul>
-        </div><br>
-        <div class="w-100% flex justify-center">
-            <p class="text-2l w-3/4 text-center opacity-70">
-                Passionné par le développement web et la création d'applications à fort impact.
-                En recherche d'un stage pour acquérir une première expérience professionnelle.
-            </p>
-        </div><br>
-        <div class="flex justify-center items-center w-full gap-10">
+        <p class="first-paragraphe font-semibold reveal reveal-up delay-300">---- Etudiant . Génie Logiciel . Lomé, Togo</p><br>
+        <p class="second-paragraphe reveal reveal-up delay-400">BONJOUR, JE SUIS</p><br>
+        <h1 class="text-7xl font-bold reveal reveal-up delay-500" id="nom">Brouhanoudine OMOROU</h1><br><br>
+        <div class="flex justify-center items-center w-full gap-10 reveal reveal-up delay-600" id="section1-div">
             <span
-                class="w-50 h-full text-2l bg-[#7F3DFF] text-white font-bold rounded-full flex items-center justify-center"
+                class="w-50 h-full text-2l bg-[#7F3DFF] text-white font-bold rounded-full flex items-center justify-center
+                hover:bg-[#ffff] hover:text-[#7F3DFF] hover:border-2 hover:border-[#7F3DFF] transform: scale-105 transition duration-300 ease-in-out"
                 id="span1">
-                <a href="">Voir mes projets</a>
+                <a href="#section5">Voir mes projets</a>
             </span>
             <span
-                class="w-50 h-full text-2l border-2 border-[#7F3DFF] text-[#7F3DFF] font-bold rounded-full flex items-center justify-center"
+                class="w-50 h-full text-2l border-2 border-[#7F3DFF] text-[#7F3DFF] font-bold rounded-full flex items-center justify-center
+                hover:bg-[#7F3DFF] hover:text-[#ffff] transform: translate-y-1 transition duration-300 ease-in-out"
                 id="span2">
-                <a href="">Contactez-moi</a>
+                <a href="#form">Contactez-moi</a>
             </span>
         </div>
     </section>
-    <h2 class="text-3xl font-bold text-center">À propos</h2>
-    <hr class="border-[#7F3DFF] w-10 border-2">
-    <section class="" id="section2">
+    <h2 class="text-3xl font-bold text-center reveal reveal-down">À propos</h2>
+    <hr class="hr border-[#7F3DFF] w-10 border-2 reveal reveal-scale delay-100">
+    <section class="reveal reveal-up delay-200" id="section2">
         <div class="w-2/2 h-full bg-[#7F3DFF] rounded-2xl flex items-center justify-center flex-col" id="profil">
             <h2 class="text-2xl text-white font-bold">Mon profil</h2>
             <p class="text-base w-full text-justify text-white">
@@ -72,7 +62,7 @@
                 professionnelle et contribuer
                 à des projets concrets au sein d'une équipe dynamique.
             </p>
-            <div class="flex justify-center items-center w-full gap-10">
+            <div class="flex justify-center items-center w-full gap-10" id="section2-div">
                 <div
                     class="bg-white text-[#7F3DFF] font-bold rounded-full px-2 py-1 w-25 h-10 flex items-center justify-center">
                     <p class="">Curieux</p>
@@ -93,59 +83,59 @@
         </div>
     </section>
     <br><br>
-    <h2 class="text-3xl font-bold text-center">Formations</h2>
-    <hr class="border-[#7F3DFF] w-10 border-2">
-    <section class="" id="section3">
+    <h2 class="text-3xl font-bold text-center reveal reveal-down">Formations</h2>
+    <hr class="hr border-[#7F3DFF] w-10 border-2 reveal reveal-scale delay-100">
+    <section id="section3">
         <div class="flex flex-wrap gap-10 justify-around">
-            <div class="bg-[#ccc] w-100" id="formation">
+            <div class="bg-[#ccc] w-100 reveal reveal-up delay-200" id="formation">
                 <div class="bg-white w-13 h-13 rounded-full flex justify-center items-center">
                     <i class="fa-solid fa-graduation-cap text-3xl" style="color: rgb(177, 151, 252);"></i>
                 </div>
-                <h2 class="font-bold text-black text-2l">Formations</h2>
-                <p class="text-black opacity-70">
+                <h2 class="font-bold text-[#7F3DFF] text-2l">Formations</h2>
+                <p class="text-black opacity-100 text-sm">
                     Licence en Génie Logiciel - 2ème Année à École Supérieure des Affaires (ESA) de Lomé - 2024 - en
                     cours
                 </p>
             </div>
-            <div class="bg-[#ccc] w-100" id="matiere">
+            <div class="bg-[#ccc] w-100 reveal reveal-up delay-300" id="matiere">
                 <div class="bg-white w-13 h-13 rounded-full flex justify-center items-center">
                     <i class="fa-solid fa-book text-3xl" style="color: rgb(177, 151, 252);"></i>
                 </div>
-                <h2 class="font-bold text-black text-2l">Matières clés</h2>
-                <p class="text-black opacity-70">
+                <h2 class="font-bold text-[#7F3DFF] text-2l">Matières clés</h2>
+                <p class="text-black opacity-100 text-sm">
                     Algorithmes, Base de données, Réseaux informatiques, Programmation orientée objet,
                     Méthodilogie agile/Scrum, Git/Github.
                 </p>
             </div>
-            <div class="bg-[#ccc] w-100" id="travail">
+            <div class="bg-[#ccc] w-100 reveal reveal-up delay-400" id="travail">
                 <div class="bg-white w-13 h-13 rounded-full flex justify-center items-center">
                     <i class="fa-solid fa-user-group text-3xl" style="color: rgb(177, 151, 252);"></i>
                 </div>
-                <h2 class="font-bold text-black text-2l">Travail collaboratif</h2>
-                <p class="text-black opacity-70">
+                <h2 class="font-bold text-[#7F3DFF] text-2l">Travail collaboratif</h2>
+                <p class="text-black opacity-100 text-sm">
                     Réalisation de projets web en équipe et en solo, avec une approche Agile/Scrum.
                 </p>
             </div>
-            <div class="bg-[#ccc] w-100" id="objectif">
+            <div class="bg-[#ccc] w-100 reveal reveal-up delay-500" id="objectif">
                 <div class="bg-white w-13 h-13 rounded-full flex justify-center items-center">
                     <i class="fa-solid fa-bullseye text-3xl" style="color: rgb(177, 151, 252);"></i>
                 </div>
-                <h2 class="font-bold text-black text-2l">Objectif</h2>
-                <p class="text-black opacity-70">
+                <h2 class="font-bold text-[#7F3DFF] text-2l">Objectif</h2>
+                <p class="text-black opacity-100 text-sm">
                     Recherche d'un stage pour acquérir une première expérience professionnelle et évoluer au sein d'une
                     équipe dynamique.
                 </p>
             </div>
         </div>
     </section>
-    <section class="" id="section4">
-        <h2 class="text-5xl font-bold text-center">Compétences</h2>
-        <hr class="border-[#7F3DFF] w-10 border-2 relative top-2">
-        <p class="text-center text-xl opacity-70 relative top-3 bottom-10 size-full" id="section4-p">
+    <section id="section4">
+        <h2 class="text-5xl font-bold text-center reveal reveal-down">Compétences</h2>
+        <hr class="hr border-[#7F3DFF] w-10 border-2 relative top-2 reveal reveal-scale delay-100">
+        <p class="text-center text-lg opacity-70 relative top-3 bottom-10 size-full reveal reveal-up delay-200" id="section4-p">
             Mes compétences techniques acquises aucours de ma formation et de mes projets <br> personnels.
         </p>
-        <div class="flex w-full justify-around gap-10">
-            <div class="w-2/4 bg-[#fff] rounded-2xl" id="first-competence">
+        <div class="flex w-full justify-around gap-10" id="competences">
+            <div class="w-2/4 bg-[#fff] rounded-2xl reveal reveal-left delay-300" id="first-competence">
                 <div class="flex flex-col justify-center items-center w-full" id="competence">
                     <p class="font-bold text-black text-2l">Développement web</p>
                     <hr class="border-[#7F3DFF] border-2" id="hr">
@@ -170,7 +160,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill-header">
-                        <span>HTML/CSS</span>
+                        <span>HTML/CSS/Tailwind</span>
                         <span>90%</span>
                     </div>
                     <div class="progress">
@@ -187,7 +177,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-2/4 bg-[#fff] rounded-2xl" id="first-competence">
+            <div class="w-2/4 bg-[#fff] rounded-2xl reveal reveal-up delay-400" id="first-competence">
                 <div class="flex flex-col justify-center items-center w-full" id="competence">
                     <p class="font-bold text-black text-2l">Outils & Méthodes</p>
                     <hr class="border-[#7F3DFF] border-2" id="hr">
@@ -229,7 +219,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-2/4 bg-[#fff] rounded-2xl" id="first-competence">
+            <div class="w-2/4 bg-[#fff] rounded-2xl reveal reveal-right delay-300" id="first-competence">
                 <div class="flex flex-col justify-center items-center w-full" id="competence">
                     <p class="font-bold text-black text-2l">Langages & Bases</p>
                     <hr class="border-[#7F3DFF] border-2" id="hr">
@@ -273,64 +263,191 @@
             </div>
         </div>
     </section>
-    <section class="" id="programmes">
-        <h2 class="text-3xl font-bold text-center"> Programmes & certifications</h2>
-        <hr class="border-[#7F3DFF] w-10 border-2 relative top-2">
-        <p class="text-center text-xl opacity-70 relative top-3 bottom-10 size-full" id="section4-p">
-            Certifications  et participations à des programmes d'innovations numérique.
+    <section id="programmes">
+        <h2 class="text-3xl font-bold text-center reveal reveal-down"> Programmes & certifications</h2>
+        <hr class="hr border-[#7F3DFF] w-10 border-2 relative top-2 reveal reveal-scale delay-100">
+        <p class="text-center text-lg opacity-70 relative top-3 bottom-10 size-full reveal reveal-up delay-200" id="section4-p">
+            Certifications et participations à des programmes d'innovations numérique.
         </p>
-        <div class="flex justify-around gap-10">
-            <div class="bg-white rounded-2xl w-full" id="color1">
+        <div class="flex justify-around gap-10" id="programmes-div">
+            <div class="bg-white rounded-2xl w-full reveal reveal-up delay-300" id="color1">
                 <div class="flex flex-col justify-center items-center rounded-t-2xl h-40" id="first-part">
                     <div class="bg-white w-25 h-25 rounded-full flex justify-center items-center">
                         <i class="fa-solid fa-trophy text-6xl" style="color: rgb(177, 151, 252);"></i>
                     </div>
                     <p class="text-white">Janvier - Mai 2025</p>
                 </div>
-                <h3 class="mt-120" id="para">Miabe Hackathon</h3> 
-                <p class="text-sm text-blue-600" id="para">Hackathon d'innovation numérique</p><br> 
+                <h3 class="mt-120" id="para">Miabe Hackathon</h3>
+                <p class="text-sm text-blue-600" id="para">Hackathon d'innovation numérique</p><br>
                 <p class="opacity-70" id="p">
                     Participation au hackathon d'innovation numérique.
                     Certification d'innovation numérique regroupant des étudiants togolais.
                 </p>
             </div>
-            <div class="bg-white rounded-2xl w-full" id="color2">
-                <div class="flex flex-col justify-center items-center rounded-t-2xl h-40 bg-gradient-to-r from-blue-600 to-sky-400" id="first-part">
+            <div class="bg-white rounded-2xl w-full reveal reveal-up delay-400" id="color2">
+                <div class="flex flex-col justify-center items-center rounded-t-2xl h-40 bg-gradient-to-r from-blue-600 to-sky-400"
+                    id="first-part">
                     <div class="bg-white w-25 h-25 rounded-full flex justify-center items-center">
                         <i class="fa-solid fa-graduation-cap text-6xl" style="color: rgb(177, 151, 252);"></i>
                     </div>
                     <p class="text-white">Janvier - Mai 2025</p>
                 </div>
-                <h3 class="mt-120" id="para">Passport numérique</h3> 
+                <h3 class="mt-120" id="para">Passport numérique</h3>
                 <p class="text-sm text-blue-600" id="para">10 000 Codeurs</p><br>
                 <p class="opacity-70" id="p">
                     Certification de niveau avancée en informatique, outils collaboratifs et développement web.
                 </p>
             </div>
-            <div class="bg-white rounded-2xl w-full" id="color3">
-                <div class="flex flex-col justify-center items-center rounded-t-2xl h-40 bg-gradient-to-r from-green-600 to-lime-500" id="first-part">
+            <div class="bg-white rounded-2xl w-full reveal reveal-up delay-500" id="color3">
+                <div class="flex flex-col justify-center items-center rounded-t-2xl h-40 bg-gradient-to-r from-green-600 to-lime-500"
+                    id="first-part">
                     <div class="bg-white w-25 h-25 rounded-full flex justify-center items-center">
                         <i class="fa-solid fa-hospital text-6xl" style="color: rgb(177, 151, 252);"></i>
                     </div>
-                <p class="text-white">Février 2026</p>
+                    <p class="text-white">Février 2026</p>
                 </div>
-                <h3 class="mt-120" id="para">Challenge Tech Santé</h3> 
+                <h3 class="mt-120" id="para">Challenge Tech Santé</h3>
                 <p class="text-sm text-blue-600" id="para">Innovation technologique & Santé</p><br>
                 <p class="opacity-70" id="p">
                     Participation au challenge d'innovation technologique portant sur les applications de la santé.
                 </p>
             </div>
+        </div>
+        </div>
+    </section>
+    <section id="section5">
+        <h2 class="text-3xl font-bold text-center reveal reveal-down"> Projets Réalisés</h2>
+        <hr class="hr border-[#7F3DFF] w-10 border-2 relative top-2 reveal reveal-scale delay-100">
+        <p class="text-center text-lg opacity-70 relative top-3 bottom-10 size-full reveal reveal-up delay-200" id="section4-p">
+            Decouvrez mes projets réalisés au cours de ma formation et en dehors.
+        </p>
+
+        <div class="flex justify-around gap-10 project">
+            <a class="bg-[#B58BFC] rounded-2xl w-200 reveal reveal-up delay-300" id="" href="https://github.com/Audrey12-GRACE/ProjetInnov" target="_blank">
+                <img src="/images/bourses.png" alt="" class="rounded-t-2xl bg-image">
+                <h2 class="text-white text-sm font-bold p-4 text-center projet-title">Plateforme de publication de bourses et de stages</h2>
+                    <p class="projet-description text-sm text-white p-4 text-center">
+                        Application web de publication et consultation d'offres de bourses et de stages.
+                        Réalisation d'un projet complet en équipe avec une approche Agile/Scrum.
+                    </p>
+                    <div class="flex justify-center items-center gap-10 projet-skills">
+                        <div class="bg-[#fff] text-[#7F3DFF] font-bold rounded-full px-2 py-1 w-25 h-10 text-sm flex items-center justify-center">
+                            <p class="">PHP</p>
+                        </div>
+                         <div class="bg-[#fff] text-[#7F3DFF] font-bold rounded-full px-2 py-1 w-25 h-10 text-sm flex items-center justify-center">
+                            <p class="">JavaScript</p>
+                        </div>
+                        <div class="bg-[#fff] text-[#7F3DFF] font-bold rounded-full px-2 py-1 w-25 h-10 text-sm flex items-center justify-center">
+                            <p class="">HTML/CSS</p>
+                        </div>
+                        <div class="bg-[#fff] text-[#7F3DFF] font-bold rounded-full px-2 py-1 w-25 h-10 text-sm flex items-center justify-center">
+                            <p class="">MySQL</p>
+                        </div>
+                    </div>
+            </a>
+
+
+             <a class="bg-[#ffff] rounded-2xl w-200 reveal reveal-up delay-400" id="" href="https://github.com/Brouhanoudine1/ProjetPHP1" target="_blank">
+                <img src="/images/locations.png" alt="" class="rounded-t-2xl bg-image">
+                <h2 class="text-[#7F3DFF] text-sm font-bold p-4 text-center projet-title">MaisonParfaite</h2>
+                    <p class="projet-description text-sm text-[#333] p-4 text-center">
+                        Application web dynamique développée en PHP permettant la gestion et la
+                        recherche de biens immobiliers (vente et location).
+                    </p>
+                    <div class="flex justify-center items-center gap-10 projet-skills">
+                        <div class="bg-[#fff] text-[#7F3DFF] font-bold rounded-full px-2 py-1 w-25 h-10 text-sm flex items-center justify-center shadow-md shadow-[#ccc]">
+                            <p class="">PHP</p>
+                        </div>
+                         <div class="bg-[#fff] text-[#7F3DFF] font-bold rounded-full px-2 py-1 w-25 h-10 text-sm flex items-center justify-center shadow-md shadow-[#ccc]">
+                            <p class="">JavaScript</p>
+                        </div>
+                        <div class="bg-[#fff] text-[#7F3DFF] font-bold rounded-full px-2 py-1 w-25 h-10 text-sm flex items-center justify-center shadow-md shadow-[#ccc]">
+                            <p class="">HTML/CSS</p>
+                        </div>
+                        <div class="bg-[#fff] text-[#7F3DFF] font-bold rounded-full px-2 py-1 w-25 h-10 text-sm flex items-center justify-center shadow-md shadow-[#ccc]">
+                            <p class="">MySQL</p>
+                        </div>
+                    </div>
+            </a>
+        </div>
+    </section>
+    <section id="section6">
+        <h2 class="text-3xl font-bold text-center reveal reveal-down"> Contact</h2>
+        <hr class="hr border-[#7F3DFF] w-10 border-2 relative top-2 reveal reveal-scale delay-100">
+        <p class="text-center text-lg opacity-70 relative top-3 bottom-10 size-full reveal reveal-up delay-200" id="section4-p">
+            Vous pouvez me contacter pour toute demande de stage, collaboration ou question.
+        </p>
+        <div class="flex justify-between gap-10" id="contact-div">
+            <div class="bg-[#fff] rounded-2xl w-full reveal reveal-left delay-300" id="contact">
+                <h2 class="text-2xl font-bold text-left">Informations de contact</h2>
+                <ul class="flex flex-col gap-10 justify-start items-start">
+                    <li class="flex gap-2 justify-start items-center">
+                        <i class="fa-solid fa-envelope text-[#7F3DFF] text-2xl"></i>
+                        <div class="flex flex-col gap-0">
+                            <p class="font-bold">Email</p>
+                            <a href="mailto:contact.brouhanoudine@gmail.com" class="text-[#7F3DFF] none text-sm">contact.brouhanoudine@gmail.com</a>
+                        </div>
+                    </li>
+                    <li class="flex gap-2 justify-start items-center">
+                        <i class="fa-solid fa-phone text-[#7F3DFF] text-2xl"></i>
+                        <div class="flex flex-col gap-0">
+                            <p class="font-bold">Téléphone</p>
+                            <a href="tel:+22890420014" class="text-[#7F3DFF] none text-sm">+228 90 42 00 14</a>
+                        </div>
+                    </li>
+                    <li class="flex gap-2 justify-start items-center">
+                        <i class="fa-brands fa-github text-[#7F3DFF] text-2xl"></i>
+                        <div class="flex flex-col gap-0">
+                            <p class="font-bold">GitHub</p>
+                            <a href="https://github.com/Brouhanoudine1/Brouhanoudine" class="text-[#7F3DFF] none text-sm" target="_blank">Brouhanoudine1</a>
+                        </div>
+                    </li>
+                    <li class="flex gap-2 justify-start items-center">
+                        <i class="fa-brands fa-linkedin text-[#7F3DFF] text-2xl"></i>
+                        <div class="flex flex-col gap-0">
+                            <p class="font-bold">LinkedIn</p>
+                            <a href="https://www.linkedin.com/in/brouhanoudine-omorou-1b9a4b1b5/" class="text-[#7F3DFF] none text-sm" target="_blank">linkedin.com/in/brouhanoudine-omorou</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-[#fff] rounded-2xl w-full reveal reveal-right delay-300" id="contact-form">
+                <h2 class="text-2xl font-bold text-left text-[#7F3DFF]">Me contacter</h2>
+                <p class="text-green-600 text-center font-bold" id="form-message"></p>
+                <form class="flex flex-col justify-start items-start bg-[#ccc] rounded-2xl w-full" id="form">
+                    <div class="">
+                        <label for="name">Nom complet</label>
+                        <input type="text" name="name" id="" placeholder="Votre nom complet">
+                    </div>
+                    <div class="">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="" placeholder="votre@email.com">
+                    </div>
+                    <div class="">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="" class="border-[#ccc] rounded-md bg-[#f9f9f9] focus:outline-none focus:ring-2 focus:ring-[#7F3DFF]" placeholder="Tapez votre message ici..."></textarea>
+                    </div>
+                    <div class="flex justify-center items-center w-full gap-10">
+                        <button type="submit" class="bg-[#7F3DFF] text-white font-bold rounded-xl px-4 py-2 w-full h-10 text-lg flex items-center justify-center cursor-pointer">Envoyer</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
-    <section class="" id="section5">
-         <h2 class="text-3xl font-bold text-center"> Programmes & certifications</h2>
-        <hr class="border-[#7F3DFF] w-10 border-2 relative top-2">
-        <p class="text-center text-xl opacity-70 relative top-3 bottom-10 size-full" id="section4-p">
-            Decouvrez mes projets réalisés au cours de ma formation et en dehors. 
-        </p>
-        
-    </section>
+    <footer class="flex flex-col justify-center items-center gap-5 bg-[#292B4D] reveal reveal-up">
+        <div class="flex flex-col justify-center items-center gap-2">
+            <p class="text-white text-2xl font-bold">Brouhanoudine OMOROU</p>
+            <p class="text-gray-300 text-sm">Étudiant en Génie Logiciel·Développeur Web·Lomé, Togo</p>
+        </div>
+        <div class="flex justify-center items-center gap-10">
+            <a href="mailto:brouhanoudine.omorou@gmail.com"><span class="bg-[#7F3DFF] text-white p-2 rounded-full"><i class="fa-solid fa-envelope text-xl"></i></span></a>
+            <a href="tel:+22890420014"><span class="bg-[#7F3DFF] text-white p-2 rounded-full"><i class="fa-solid fa-phone text-xl"></i></span></a>
+            <a href="https://github.com/Brouhanoudine1/Brouhanoudine" target="_blank"><span class="bg-[#7F3DFF] text-white p-2 rounded-full"><i class="fa-brands fa-github text-xl"></i></span></a>
+            <a href="https://www.linkedin.com/in/brouhanoudine-omorou" target="_blank"><span class="bg-[#7F3DFF] text-white p-2 rounded-full"><i class="fa-brands fa-linkedin text-xl"></i></span></a>
+        </div>
+        <hr class="border-[#7F3DFF] w-full border-1 text-center ">
+        <p class="text-white text-sm">© 2026 Brouhanoudine OMOROU. Tous droits réservés.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="/js/script.js"></script>
 </body>
 
